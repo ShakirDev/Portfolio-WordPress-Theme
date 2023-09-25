@@ -1,0 +1,270 @@
+/*=========================
+--------Nav Items----------
+==========================*/
+/* Slide-in menu for mobile */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 400px;
+        height: 100%;
+        background-color: #fff;
+        overflow-y: auto;
+        transition: right 0.3s ease;
+        z-index: 1050;
+    }
+
+    .navbar-nav .nav-item,
+    .navbar-toggler {
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+    }
+
+    /* Close button for mobile */
+    .close-menu {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    /* Make menu items display in a column */
+    .navbar-nav {
+        flex-direction: column;
+        padding-top: 50px;
+
+    }
+
+    /* Style for menu items */
+    .navbar-nav .nav-item {
+        text-align: center;
+        padding: 10px 0;
+        /* Adjust as needed for spacing */
+    }
+
+    /* Style for menu item links */
+    .navbar-nav .nav-item a {
+        font-size: 18px;
+        font-weight: 500;
+        color: #080808;
+        transition: color 0.3s ease;
+    }
+
+    /* Style for menu item links on hover */
+    .navbar-nav .nav-item a:hover {
+        color: #ff8500;
+        font-weight: 600;
+    }
+
+    /* Style for menu item links with underline */
+    .navbar-nav .nav-item a::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: currentColor;
+        transition: width 0.3s ease;
+    }
+
+    /* Slide-in menu for mobile */
+    @media (max-width: 991px) {
+        .navbar-collapse {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 400px;
+            height: 100%;
+            background-color: #fff;
+            overflow-y: auto;
+            transition: right 0.3s ease;
+            z-index: 1050;
+        }
+
+        .navbar-nav .nav-item,
+        .navbar-toggler {
+            display: block !important;
+            visibility: visible !important;
+        }
+
+        .navbar-collapse.show {
+            right: 0;
+        }
+
+        /* Close button for mobile */
+        .close-menu {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        /* Make menu items display in a column */
+        .navbar-nav {
+            flex-direction: column;
+            padding-top: 50px;
+
+        }
+
+        /* Style for menu items */
+        .navbar-nav .nav-item {
+            text-align: center;
+            padding: 10px 0;
+            /* Adjust as needed for spacing */
+        }
+
+        /* Style for menu item links */
+        .navbar-nav .nav-item a {
+            font-size: 18px;
+            font-weight: 500;
+            color: #080808;
+            transition: color 0.3s ease;
+        }
+
+        /* Style for menu item links on hover */
+        .navbar-nav .nav-item a:hover {
+            color: #ff8500;
+            font-weight: 600;
+        }
+
+        /* Style for menu item links with underline */
+        .navbar-nav .nav-item a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+
+        /* Style for menu item links with underline on hover */
+        .navbar-nav .nav-item a:hover::after {
+            width: 100%;
+        }
+
+        /* Exclude nav items that have dropdowns */
+        li.nav-item.dropdown>a span::after,
+        li.nav-item.dropdown>a span:hover::after {
+            content: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        /* Show close button on mobile */
+        .close-menu {
+            display: block;
+        }
+    }
+
+    /* Hide close button on desktop */
+    .navbar-collapse {
+        z-index: 9999;
+
+    }
+
+    /* Style for menu item links with underline on hover */
+    .navbar-nav .nav-item a:hover::after {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+
+    /* Show close button on mobile */
+    .close-menu {
+        display: block;
+    }
+}
+
+/* Hide close button on desktop */
+.navbar-collapse {
+    z-index: 9999;
+
+
+}
+
+
+/*=========================
+--------Hero-Section-------
+==========================*/
+
+@media (max-width: 991px) {
+    .order-md-2 {
+
+        padding-right: 20px
+    }
+
+    img.portfoliopic {
+        max-width: 90%;
+        height: 90%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .wmit-hero {
+        height: 800px !important;
+    }
+
+    img.portfoliopic {
+        border: 8px solid #030712;
+        border-radius: 1px;
+        box-shadow: 0px 33px 0px 10px #374151 I !important;
+    }
+}
+
+/*=========================
+--------Portfolio-Section-------
+==========================*/
+
+@media (max-width: 767px) {
+    .row.mb-4.px-sm-2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .port-thumb {
+        padding: 30px !important;
+        border-radius: 10px 10px 0px 0px !important;
+    }
+
+    .portfolio-card {
+
+        padding: 38px !important;
+
+        border-radius: 0px 0px 10px 10px !important;
+    }
+}
+
+/*=========================
+--------Contact-------
+==========================*/
+
+@media (max-width: 767px) {
+    .text-contact>a {
+
+        font-size: 26px !important;
+        line-height: 30px !important;
+
+    }
+
+
+    .text-contact>a>i {
+        font-size: 24px !important;
+
+    }
+
+}

@@ -1,0 +1,491 @@
+/*=========================
+--------UTILITIES----------
+==========================*/
+
+.nav-link:focus {
+    color: var(--bs-nav-link-hover-color);
+    outline: none;
+}
+
+/* Apply Playfair Display to headings, links, and buttons */
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+button {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Apply Work Sans to paragraphs and other text */
+body,
+p,
+span,
+div,
+input,
+textarea {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*=========================
+--------Nav Items----------
+==========================*/
+
+
+
+/* Apply Playfair Display to headings, links, and buttons */
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+button {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Apply Work Sans to paragraphs and other text */
+body,
+p,
+span,
+div,
+input,
+textarea {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Nav Items */
+
+li.nav-item>a span {
+    color: #080808;
+    font-weight: 500;
+    position: relative;
+
+}
+
+li.nav-item>a span:hover {
+    color: #ff8500;
+    font-weight: 600;
+}
+
+/* Add smooth underline on hover */
+li.nav-item>a span::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+li.nav-item>a span:hover::after {
+    width: 100%;
+}
+
+/* Exclude nav items that have dropdowns */
+li.nav-item.dropdown>a span::after,
+li.nav-item.dropdown:hover>a span::after {
+    content: none;
+}
+
+.dropdown-toggle::after {
+
+
+    transition: transform 0.3s ease;
+}
+
+.dropdown-toggle.rotated::after {
+    transform: rotate(180deg);
+}
+
+/*Nav bar*/
+.navbar {
+    flex-wrap: nowrap;
+}
+
+
+
+/* Hide close button on desktop */
+.close-menu {
+    display: none;
+}
+
+
+
+
+/*=========================
+--------Hero-Section-------
+==========================*/
+.wmit-hero {
+    height: 552px;
+    background-color: #080808;
+}
+
+/* Add animation keyframes for waving emoji */
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Apply animation to the emoji */
+.wave-emoji {
+    display: inline-block;
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* Style the paragraph text */
+p.lead {
+    font-size: 16px;
+    color: #D1D5DB;
+}
+
+/* Style the icon-text pairs */
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.icon-text i {
+    margin-right: 10px;
+
+    font-size: 16px;
+
+}
+
+/* Style the icons individually (optional) */
+.icon-text .fas.fa-map-marker-alt {
+    color: #0088cc;
+
+}
+
+.icon-text .fas.fa-circle {
+    color: #00bb00;
+
+}
+
+/* Style the social icons */
+.social-icons {
+    margin-top: 20px;
+    gap: 10px;
+
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+
+    font-size: 24px;
+
+    margin-right: 5px;
+
+}
+
+/* Hover effect (optional) */
+.social-icons a:hover {
+    color: #0073e6;
+
+}
+
+/*portflio pic style*/
+img.portfoliopic {
+    border: 8px solid #030712;
+    border-radius: 1px;
+    box-shadow: 40px 40px 0px 5px #374151;
+}
+
+
+/*=========================
+--------About Me-Section-------
+==========================*/
+
+
+
+.wmit-aboutme {
+    background-color: #111827;
+}
+
+.aboutus-txt {
+    background-color: #374151;
+    padding: 4px 20px;
+    color: #D1D5DB;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 50px;
+}
+
+.about-heading {
+    color: #fff;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.6px;
+}
+
+.about-paragraph {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+img.portfolioabtpic {
+    border: 8px solid #030712;
+    border-radius: 1px;
+}
+
+a.bio-clink {
+    color: #ffc107;
+}
+
+/*=========================
+--------skills-Section-------
+==========================*/
+.wmit-skills {
+    background-color: #030712;
+}
+
+.skills-txt {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: #fff
+}
+
+.skills-img {
+    max-width: 100%;
+}
+
+.skills-div {
+    padding: 40px;
+}
+
+.skills-div:hover {
+    background-color: rgba(17, 1, 1, 0.772);
+    border-radius: 5px;
+    transition: auto .3s ease-in-out;
+}
+
+.skills-name {
+    color: #D1D5DB;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+/*=========================
+--------Portfolio-Section-------
+==========================*/
+
+
+.port-thumb {
+    background-color: #374151;
+    padding: 48px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.port-thumb>img {
+
+    border-radius: 10px;
+}
+
+.portfolio-card {
+    background-color: #4B5563;
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.portfolio-card-title a {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.portfolio-card-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #D1D5DB
+}
+
+
+.portfolio-card-tags>span {
+    background-color: #374151;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: #D1D5DB;
+    padding: 4px 20px;
+}
+
+
+.portfolio-card-live-url {
+    padding-top: 40px;
+}
+
+
+.portfolio-card-live-url>a>i {
+    color: #D1D5DB;
+    font-size: 30px;
+}
+
+.portfolio-card-live-url>a>i:hover {
+    color: #374151;
+
+    font-size: 30px;
+    transition: smooth .3s ease-in-out;
+}
+
+
+/*=========================
+--------FAQ-Section-------
+==========================*/
+.accordion-button {
+    color: #D1D5DB;
+    font-size: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #D1D5DB;
+    background-color: #343a40;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion {
+    --bs-accordion-border-width: none;
+}
+
+
+
+
+
+/*=========================
+--------Testimonial-Section-------
+==========================*/
+
+
+
+/* Testimonial Card Styles */
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-image {
+    font-size: 48px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.client-company {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.client-designation {
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #444;
+    margin-top: 20px;
+}
+
+.fa-quote-left {
+    font-size: 24px;
+    color: #e73700;
+    margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .testimonial-card {
+        margin-bottom: 20px;
+    }
+}
+
+/*=========================
+--------Contact-------
+==========================*/
+
+.mt-10 {
+    margin-top: 50px;
+}
+
+.text-contact>a {
+    color: #F9FAFB;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    font-family: Inter;
+    letter-spacing: -0.72px;
+    text-decoration: none;
+}
+
+.text-contact>a>i {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+
+
+.site-footer {
+    background-color: #080808;
+}
+
+.ft-text {
+    color: #fff;
+}
